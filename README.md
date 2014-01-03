@@ -1,6 +1,6 @@
-# One Month Rails
+# Pinteresting
 
-This is the pinteresting sample application for 
+This is a sample application from 
 [*One Month Rails*](http://onemonthrails.com)
 
 by [Charles Law](http://charleslaw.ca)
