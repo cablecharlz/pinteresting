@@ -1,10 +1,13 @@
 $body-bg:			#ecf0f1;
+
+$font-size-h1:			36px;
+
 $navbar-inverse-bg: 		#e74c3c;
 $navbar-inverse-link-color:			white;
+$navbar-border-radius:			0px;
 
 $brand-primary:		#2ecc71;
 
-$jumbotron-bg:		#bdc3c7;
-
+$panel-border-radius:		4px;
 
 @import 'bootstrap';
