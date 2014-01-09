@@ -4,9 +4,22 @@
   </div>
   <div class="col-xs-4 center"><h4><%= link_to "Pinteresting", root_path, :class => "center", :id => "logo" %></h4>
   </div>
-  <div class="col-xs-4 right no-padding" id="login">
-    <button type="button" class="btn btn-default"><%= link_to "Log in", login_path %></button>
+
+  <% if user_signed_in? %>
+
+  <div class="col-xs-4 right no-padding" id="login">    
+
+  <button type="button" class="btn btn-default"><%= link_to "Log Out",  destroy_user_session_path, method: :delete %></button>
+    
   </div>
+
+  <% else %>
+
+  <div class="col-xs-4 right no-padding" id="login">    
+    <button type="button" class="btn btn-default"><%= link_to "Log in", new_user_session_path %></button>
+  </div>
+<% end %>
+
 </div>
 </div>
 
@@ -14,8 +27,23 @@
   <div class="container">
   <div class="col-xs-6"><h4><%= link_to "Pinteresting", root_path, :id => "logo" %></h4>
   </div>
+
+<% if user_signed_in? %>
+  
+  <div class="col-xs-6 right" id="login">
+
+  <button type="button" class="btn btn-default"><%= link_to "Log Out",  destroy_user_session_path, method: :delete %></button>
+    
+  </div>
+  
+  <% else %>
+
   <div class="col-xs-6 right" id="login">
     <button type="button" class="btn btn-default"><%= link_to "Log in", login_path %></button>
   </div>
+  
+  <% end %>
+  
   </div>
+
 </div>
