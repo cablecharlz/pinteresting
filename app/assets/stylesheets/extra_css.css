@@ -10,39 +10,38 @@
 .voffset9 { margin-top: 150px; }
 
 #center {
-    text-align: center;
+    text-align: 		center;
+}
+
+#logo{
+	font-family: 			"bello-pro";
+	font-size:				24px;
 }
 
 #margin-pad{
-	padding:25px 0px 25px 0px;
-}
-
-.homeButton{
-	width: 100px;
+	padding:					25px 0px 25px 0px;
 }
 
 .shadow{
-	box-shadow: 2px 2px 2px #888888;
+	box-shadow: 			1px 1px 1px #bdc3c7;
 }
 
-.navbar-brand {
-    float:none;
-    margin-top:3px;
+.center {
+text-align:					center;
 }
 
-.zindex{
-	z-index:100;
+.right{
+	text-align:				right;
 }
 
-.navbar-test{
-position: relative;
-float: right;
-margin-right: 15px;
-padding: 9px 10px;
-margin-top: 8px;
-margin-bottom: 8px;
-background-color: transparent;
-background-image: none;
-border: 1px solid transparent;
-border-radius: 4px;
+.navbar-brand{
+	text-align:				center;
+}
+
+#login{
+	margin-top:				4px;
+}
+
+.no-padding{
+	padding: 0 0 0 0px;
 }

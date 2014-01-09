@@ -1,13 +1,40 @@
-$body-bg:			#ecf0f1;
+$body-bg:											#ecf0f1;
+$font-family-sans-serif: 			'museo-slab';
+$font-size-h1:								36px;
 
-$font-size-h1:			36px;
+$navbar-inverse-bg: 					#FFFFFF;
+$navbar-border-radius:				0px;
+$navbar-height:								30px;
 
-$navbar-inverse-bg: 		#e74c3c;
-$navbar-inverse-link-color:			white;
-$navbar-border-radius:			0px;
+$brand-primary:								#2ecc71;
 
-$brand-primary:		#2ecc71;
-
-$panel-border-radius:		4px;
+$panel-border-radius:					4px;
 
 @import 'bootstrap';
+
+.shadow{
+	box-shadow: 								1px 1px 1px #bdc3c7;
+}
+
+.center {
+	text-align:									center;
+}
+
+.right{
+	text-align:									right;
+}
+
+.no-padding{
+	padding: 										0 0 0 0px;
+}
+
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
