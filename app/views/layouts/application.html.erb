@@ -18,9 +18,19 @@
 
 <div class="container">
   
-  <% flash.each do |name, msg| %>
+<!--   
+Hiding displaying general flash messages.    
+
+Add
+<%= content_tag(:div, flash[:notice], :class=> "alert alert-danger") if flash[:notice] %>
+<%= content_tag(:div, flash[:alert], :class=> "alert alert-danger") if flash[:alert] %>
+to the specific page
+
+<% flash.each do |name, msg| %>
      <%= content_tag(:div, msg, class: "alert alert-info") %>
-  <% end %>
+  <% end %> 
+  
+-->
 	
   <%= yield %>
 </div>

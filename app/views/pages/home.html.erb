@@ -1,3 +1,6 @@
+<%= content_tag(:div, flash[:notice], :class=> "alert alert-danger") if flash[:notice] %>
+<%= content_tag(:div, flash[:alert], :class=> "alert alert-danger") if flash[:alert] %>
+
 <div id="margin-pad" class="panel panel-default shadow">
   <div class="panel-body">
 		

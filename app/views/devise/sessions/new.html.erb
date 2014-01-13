@@ -10,6 +10,8 @@
 
 			<div class="panel-body">
 					<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+					<%= content_tag(:div, flash[:notice], :class=> "alert alert-danger") if flash[:notice] %>
+					<%= content_tag(:div, flash[:alert], :class=> "alert alert-danger") if flash[:alert] %>
 
 				<div class = "form-group">
 					<%= f.label :email %>
