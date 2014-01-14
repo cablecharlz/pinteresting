@@ -19,3 +19,14 @@
 #login{
 	margin-top:				4px;
 }
+
+.hover_edit{
+	  position:absolute;
+    top:10px;
+    right:10px;
+    display: none;
+}
+
+.box:hover .hover_edit{
+display:block;
+};
