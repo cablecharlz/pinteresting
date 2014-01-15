@@ -11,7 +11,6 @@ class PinsController < ApplicationController
 
   def index
     @pins = Pin.order("created_at DESC").page(params[:page]).per_page(7)
-
     respond_to do |format|
         format.html
         format.js
