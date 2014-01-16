@@ -1,6 +1,6 @@
-$boxes = $('<%= j render(@pins) %>')
+box = $('<%= render(@pins) %>')
 
-$('#pins').append( $boxes ).imagesLoaded( function(){
+$('#pins').append( $box ).imagesLoaded( function(){
   $('#pins').masonry( 'reload');
 });
 <% if @pins.next_page %>
